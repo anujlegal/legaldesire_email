@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 # Configuration from environment variables
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8681266408:AAH0LU4RssHRbrJz1oXtHlGkwZviG4Rx4V4")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "8741403990")
+TELEGRAM_CHAT_ID = int(os.getenv("TELEGRAM_CHAT_ID", "8741403990")
 GMAIL_CREDENTIALS = os.getenv("GMAIL_CREDENTIALS", "{}")
 CHECK_INTERVAL_MINUTES = int(os.getenv("CHECK_INTERVAL", "30"))
 
